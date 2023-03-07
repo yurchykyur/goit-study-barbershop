@@ -10,6 +10,29 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
 /* UTILITIES */
 
 .list {
@@ -58,12 +81,13 @@ body {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  width: calc(1170px + 16px + 16px);
+  margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
-  width: calc(1248px + 16px + 16px);
+
   background-color: rgb(0, 128, 0);
+  outline: 1px solid black;
 }
 
 img {
@@ -77,6 +101,8 @@ img {
 
 .header {
   background-color: gray;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-link {
