@@ -46,6 +46,8 @@ address {
 }
 
 .btn {
+  min-width: 160px;
+  height: 40px;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -53,6 +55,9 @@ address {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  background-color: transparent;
 }
 
 .btn:is(:hover, :focus) {
@@ -105,6 +110,26 @@ img {
   padding-bottom: 32px;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  margin-right: 131px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
 .header-link {
   font-weight: 600;
   font-size: 12px;
@@ -125,16 +150,23 @@ img {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-right: 43px;
 }
 
 .header-btn {
   color: var(--main-btn-color);
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
 }
 
 /* -------- HERO ------- */
 
 .hero {
   background-color: #303030;
+}
+
+.hero-container {
+  display: flex;
 }
 
 .hero-list {
